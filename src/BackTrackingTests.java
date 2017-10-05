@@ -1,10 +1,11 @@
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 public class BackTrackingTests {
     
-    // Try    
+    // Tests with invalid arguments  
     
     @Test(expected = java.lang.IllegalArgumentException.class)
     public void tryWithUmbrellasEmpty() {
@@ -31,7 +32,7 @@ public class BackTrackingTests {
     }
 
     
-    // One umbrella
+    // Tests with one umbrella
     
     @Test
     public void oneUmbrellaSamePeopleSize() {
@@ -70,7 +71,7 @@ public class BackTrackingTests {
     }
     
     
-    // Two umbrellas
+    // Tests with two umbrellas
     
     @Test
     public void twoUmbrellasButNoSolution() {
@@ -103,7 +104,7 @@ public class BackTrackingTests {
     }
     
     
-    // Three umbrellas
+    // Tests with three umbrellas
     
     @Test
     public void threeUmbrellasMiddleBest() {
